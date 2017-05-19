@@ -1,7 +1,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
     <body>
         <referenceContainer name="content">
-            <block class="SP\Slider\Block\Slider" name="slider" template="slider.phtml" />
+            <block class="SP\Slider\Block\Slider" name="sp.slider" template="SP_Slider::slider.phtml" />
         </referenceContainer>
     </body>
 </page>

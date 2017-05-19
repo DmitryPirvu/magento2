@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sp_slider" translate="label" sortOrder="10">
+            <label>SP Slider</label> <!--tab name-->
+        </tab>
+        <section id="sp_slider_section" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class> <!--css class-->
+            <label>Slider</label> <!--Section name-->
+            <tab>sp_slider</tab> <!-- tab id for this section-->
+            <resource>SP_Slider::slider_section_configuration</resource> <!-- Unique resource id for acl-->
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General configuration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Module enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_text" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Display text</label>
+                    <comment>Comment for this field</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
